@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AHOJ TO SOM JA</title>
+</head>
+<body>
+<hr>
+<h2>Vytvorenie uctu</h2>
+<input id="meno" type="text" placeholder="ZADAJTE MENO">
+<input id="zostatok" type="number" placeholder="ZADAJTE VAS POCIATOCNY ZOSTATOK">
+<button id="tlacidlo1" type="button">VYTVOR UCET</button>
+<hr>
+
+<section>
+    <h2>PREVOD</h2>
+    <input id="fromAcc" type="number" placeholder="ID ODOSIELATELA">
+    <input id="toAcc" type="number" placeholder="ID PRIJEMCU">
+    <input id="transferAmount" type="number" placeholder="SUMA">
+    <button id="tlacidlo2">PREVIEST</button>
+</section>
+
+<hr>
+
+<section>
+    <h2>ZOSTATOK NA UCTE</h2>
+    <input id="balanceAccount" type="number" placeholder="ZOSTATOK NA UCTE">
+    <button onclick="consultarSaldo()">ZOBRAZIT</button>
+</section>
+
+<hr>
+<h2>Prepočet meny</h2>
+
+<input id="kurzId" type="number" placeholder="ID účtu">
+
+<select id="kurzMena">
+  <option value="USD">USD - Dolár</option>
+  <option value="GBP">GBP - Libra</option>
+  <option value="CZK">CZK - Koruna</option>
+</select>
+
+<button id="tlacidlo">Zisti kurz</button>
+
+<p id="kurzVysledok"></p>
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+
+</html>
